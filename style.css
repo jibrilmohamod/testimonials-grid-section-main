@@ -1,3 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #edf2f8;
+}
+
+
+/* layout styling */
+
+main {
+    height: 100vh;
+    margin: auto 100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* grid-template: repeat(2, 400px)/repeat(4, 250px); */
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(10px));
+    justify-items: start;
+    align-items: center;
+    gap: 10px;
+    grid-template-areas: "dn dn jn kr" "jh pa pa kr";
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: 0px 0px 10px rgb(197, 184, 184);
+}
+
+
+/* end of layout styling */
+
+
+/* text and image styling for all grid and flex items */
+
+p {
+    background-color: initial;
+    color: #e5ecee;
+}
+
+span {
+    display: flex;
+    background-color: initial;
+    align-items: center;
+    font-weight: 600;
+}
+
+img {
+    border-radius: 50%;
+    margin-right: 7px;
+    /* width: 10%; */
+}
+
+header {
+    background-color: initial;
+    font-size: 12px;
+}
+
+header span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+div {
+    background-color: initial;
+    font-size: 13px;
+    color: #a2acba;
+}
+
+
+/* end of text and image styling for all grid and flex items  */
+
+
+/* daniel clifford styling */
+
+.dn {
+    background-color: #733fc8;
+    grid-area: dn;
+    justify-self: center;
+    align-self: center;
+}
+
+.dc {
+    color: #fffbff;
+}
+
+#dc {
+    color: #a2acba;
+}
+
+
+/* end of daniel clifford styling */
+
+
+/* jonathan walters styling */
+
+.jn {
+    grid-area: jn;
+    background-color: #49556b;
+}
+
+.nw {
+    color: #fffbff;
+}
+
+#jn {
+    color: #a2acba;
+}
+
+
+/* end of jonathan walters styling */
+
+
+/* jannete harmon styling */
+
+.jh {
+    grid-area: jh;
+    background-color: #ffffff;
+}
+
+.ar {
+    color: #49556b;
+}
+
+.ea {
+    color: hsl(219, 19%, 35%);
+}
+
+#ea {
+    color: #a2acba;
+}
+
+
+/* end of jannete styling */
+
+
+/* patrik styling */
+
+.pa {
+    grid-area: pa;
+    background-color: #18202d;
+}
+
+.ra {
+    color: #fffbff;
+}
+
+#ra {
+    color: #a2acba;
+}
+
+
+/* end of patrik styling */
+
+
+/* kira styling */
+
+.kr {
+    grid-area: kr;
+    background-color: #ffffff;
+}
+
+
+/* end of kira styling */
+
+@media (max-width: 500px) {
+    main {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        justify-content: space-evenly;
+        margin: 60px;
+    }
+    article {
+        justify-content: space-evenly;
+    }
+    img {
+        width: 15%;
+    }
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
