@@ -61,7 +61,7 @@ span {
 img {
     border-radius: 50%;
     margin-right: 7px;
-    width: 10%;
+    /* width: 10%; */
 }
 
 header {
