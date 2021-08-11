@@ -25,7 +25,7 @@ Users should be able to:
 
 
 ### Links
-- Solution URL: [Add solution URL here](https://github.com/420-bot/testimonials-grid-section-main)
+- Solution URL: [github.com/420-bot/testimonials-grid-section-main](https://github.com/420-bot/testimonials-grid-section-main)
 
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
